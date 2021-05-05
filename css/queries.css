@@ -1,0 +1,161 @@
+/*big tablet to  1200px ( width smaller that the 1140px row)*/
+@media only screen and (max-width: 1200px) {
+	ul > li {
+		width: 135px;
+		margin-right: 25px;
+	}
+	ul > li:last-child {
+		margin-right: 50px;
+	}
+	ul > li > ul > li:last-child {
+		margin: 3px 0;
+	}
+}
+
+/*small tablet to big tablet: from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+	.container {
+		min-height: 100px;
+	}
+
+	.wrapper {
+		background-image: url(../image/image2.png);
+		animation: slide 180s linear infinite;
+		margin-top: 100px;
+	}
+	body._touch .menu_arrow {
+		margin-right: 70px;
+	}
+	body._touch ul > li:hover > a {
+		font-size: 17px;
+	}
+	body._touch ul > li > ul > li {
+		margin: 15px 0;
+	}
+
+	body._touch ul > li > ul > li:first-child {
+		margin-top: 25px;
+	}
+
+	.menu_icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 35px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.menu_icon span,
+	.menu_icon::before,
+	.menu_icon::after {
+		left: 0;
+		position: absolute;
+		height: 12%;
+		width: 100%;
+		transition: all 0.6s ease 0s;
+		background-color: white;
+	}
+	.menu_icon::before,
+	.menu_icon::after {
+		content: "";
+	}
+
+	.menu_icon::before {
+		top: 0;
+	}
+	.menu_icon::after {
+		bottom: 0;
+	}
+	.menu_icon span {
+		top: 50%;
+		margin-top: -4%;
+		transform: scale(1);
+	}
+
+	.menu_icon._active span {
+		transform: scale(0);
+	}
+
+	.menu_icon._active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(5%);
+	}
+
+	.menu_icon._active::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(7%);
+	}
+
+	.menu_body {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 100px 30px 30px 22px;
+		transition: left 0.6s ease 0.1s;
+		transition-duration: 1s;
+		margin-left: 0;
+		overflow: auto;
+	}
+	.menu_body._active {
+		left: 0;
+	}
+
+	.menu_body::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 100px;
+		background-color: black;
+		z-index: 6;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	ul > li {
+		margin: 30px 0;
+	}
+	ul > li:last-child {
+		margin-right: 0;
+	}
+
+	ul > li > ul > li {
+		margin: 10px 0;
+		border-bottom: none;
+	}
+
+	ul > li > ul > li:first-child {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+	ul > li > a {
+		display: inline-block;
+		font-size: 17px;
+	}
+
+	ul > li:hover > a {
+		font-size: 17px;
+	}
+
+	.logo {
+		margin-left: 10px;
+	}
+}
+
+/*small phone to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+}
+
+/* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+}

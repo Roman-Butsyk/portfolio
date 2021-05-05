@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/slider3.css">
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="image-slider swiper-container">
+			<div class="image-slider__wrapper swiper-wrapper">
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider1">
+						<img src="image/sofiay/IMG_0290.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider2">
+						<img src="image/sofiay/IMG_0295.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider3">
+						<img src="image/sofiay/IMG_0298.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider4">
+						<img src="image/sofiay/IMG_0342.jpg" alt="">
+					</div>
+				</div>
+				<div class=" image-slider__slide swiper-slide">
+					<div class="image-slider__image slider5">
+						<img src="image/sofiay/IMG_0350.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider6">
+						<img src="image/sofiay/IMG_0386.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider7">
+						<img src="image/sofiay/IMG_0387.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider8">
+						<img src="image/sofiay/IMG_0388.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider9">
+						<img src="image/sofiay/IMG_0389.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider10">
+						<img src="image/sofiay/IMG_0460.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider11">
+						<img src="image/sofiay/IMG_0467.jpg" alt="">
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="image-slider__image slider12">
+						<img src="image/sofiay/IMG_0525.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="JS/index.js"></script>
+	<script>
+		window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+				document.body.classList.add('loaded');
+				document.body.classList.remove('loaded_hiding');
+			}, 500);
+		}
+	</script>
+</body>
+
+</html>
